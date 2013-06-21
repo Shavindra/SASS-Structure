@@ -1,0 +1,27 @@
+﻿// Variables
+
+
+// Mixins
+@mixin clearfix {
+	
+	&:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+
+}
+
+@mixin clearboth {
+	clear:both;
+}
+
+$content: "Second content?" ;
+$new_content: "First time reference" !default;
+
+#main {
+  content: $content;
+  new-content: $new_content;
+}
